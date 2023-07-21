@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
   end
 
+  # creates below paths
+    # hobby_posts_path
+    # study_posts_path
+    # team_posts_path
   resources :posts do
     collection do
       get 'hobby'
